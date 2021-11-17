@@ -11,4 +11,5 @@ https://github.com/VyacheslavPridchin/VU_CommunicationServer
 
 Для синхронизации системы аккаунтов необходимо развернуть MySQL сервер с структурой, указанной в файле в следующем репозитории (можно импортировать):
 https://github.com/VyacheslavPridchin/VU_SQLDatabase
+
 После в скриптах SQL.cs на сервере и клиенте указать данные для подключения
