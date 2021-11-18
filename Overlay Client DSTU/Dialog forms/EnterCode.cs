@@ -50,7 +50,7 @@ namespace Overlay_Client_DSTU
                     if (SQL.SQLCounter($"SELECT id FROM Accounts WHERE email LIKE '{EMailCode.Text}'") == 0)
                     {
                         // отправитель - устанавливаем адрес и отображаемое в письме имя
-                        MailAddress from = new MailAddress("virtual_dstu@dstu.online", "Виртуальный ДГТУ");
+                        MailAddress from = new MailAddress("mail", "name");
                         // кому отправляем
                         MailAddress to = new MailAddress(EMailCode.Text);
                         // создаем объект сообщения
@@ -65,9 +65,9 @@ namespace Overlay_Client_DSTU
                         // письмо представляет код html
                         m.IsBodyHtml = true;
                         // адрес smtp-сервера и порт, с которого будем отправлять письмо
-                        SmtpClient smtp = new SmtpClient("dstu.online", 587);
+                        SmtpClient smtp = new SmtpClient("yoursite.net", 587);
                         // логин и пароль
-                        smtp.Credentials = new NetworkCredential("virtual_dstu@dstu.online", "E0c5W1o8");
+                        smtp.Credentials = new NetworkCredential("login", "password");
                         smtp.EnableSsl = false;
                         smtp.Send(m);
 
