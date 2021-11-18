@@ -13,3 +13,5 @@ https://github.com/VyacheslavPridchin/VU_CommunicationServer
 https://github.com/VyacheslavPridchin/VU_SQLDatabase
 
 После в скриптах SQL.cs на сервере и клиенте указать данные для подключения
+
+Для отправки писем с кодом подтверждения необходимо развернуть почтовый сервер и в скриптах Recovery.cs и EnterCode.cs ввести свои данные для входа в почтовый сервис
