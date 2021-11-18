@@ -62,9 +62,9 @@ namespace Overlay_Client_DSTU
                     // письмо представляет код html
                     m.IsBodyHtml = true;
                     // адрес smtp-сервера и порт, с которого будем отправлять письмо
-                    SmtpClient smtp = new SmtpClient("dstu.online", 587);
+                    SmtpClient smtp = new SmtpClient("yoursite.net", 587);
                     // логин и пароль
-                    smtp.Credentials = new NetworkCredential("virtual_dstu@dstu.online", "E0c5W1o8");
+                    smtp.Credentials = new NetworkCredential("login", "password");
                     smtp.EnableSsl = false;
                     smtp.Send(m);
 
