@@ -1,3 +1,4 @@
+#### Not maintained by developers. Не поддерживается разработчиками.
 # VU_Overlay
 Launcher version for Virtual University. Main functions
   - Start virtual environment by relative path
